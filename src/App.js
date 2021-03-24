@@ -1,23 +1,28 @@
 import logo from './logo.svg';
+import React, { Component } from "react";
 import './App.css';
-
+import HeaderComponent from './headerComponent';
+import CardComponent from './cardComponent';
+import CarouselComponent from './carouselComponent';
+import FooterComponent from './footerComponent';
+import ProjectComponent from './projectComponent';
+import Project2Component from './project2Component';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+      <HeaderComponent/>
+      <br/><br/>
+      <Route path="/Page 1">
+        <ProjectComponent/>
+      </Route>
+      <Route path="/Page 2">
+        <Project2Component/>
+      </Route>
+      </Router>
+      
+      
     </div>
   );
 }
