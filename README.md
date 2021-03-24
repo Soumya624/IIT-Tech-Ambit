@@ -1,3 +1,8 @@
+
+#Steps
+1. Do yarn install
+2. Do "localhost:3000/Page 1" (for first page)
+3. Do "localhost:3000/Page 2" (for second page)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
