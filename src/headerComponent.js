@@ -28,10 +28,7 @@ const Example = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar style={{textAlign:"right"}}>
             <NavItem>
-              <NavLink href="#" style={{color:"white"}}>Project</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#" style={{color:"white"}}>Application</NavLink>
+              <NavLink href="#" style={{color:"white"}}>Sing out</NavLink>
             </NavItem>
             {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
