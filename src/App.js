@@ -8,6 +8,7 @@ import FooterComponent from './footerComponent';
 import ProjectComponent from './projectComponent';
 import Project2Component from './project2Component';
 import Project3Component from './project3Component';
+import Project4Component from './project4Component';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <HeaderComponent/>
       <br/><br/>
       <center>
-        <h2>Welcome to the Homepage!</h2>
+        <h2>Welcome Here!</h2>
       </center>
       <Route path="/Page 1">
         <ProjectComponent/>
@@ -26,6 +27,9 @@ function App() {
       </Route>
       <Route path="/Page 3">
         <Project3Component/>
+      </Route>
+      <Route path="/Page 4">
+        <Project4Component/>
       </Route>
       </Router>
       
